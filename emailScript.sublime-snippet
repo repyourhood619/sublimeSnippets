@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+Got to and use input: http://robspangler.com/blog/encrypt-mailto-links-to-stop-email-spam/
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>emailScript</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

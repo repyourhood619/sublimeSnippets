@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+<? \$blogs = \$blog->find()->where('publish', 1)->orderby('id', 'desc')->limit(3); ?>
+  <? foreach(\$blogs as \$blogItem) { ?>
+    <? \$summary = \$blogItem->content; ?>
+    <?  \$yearNameEvent = date("Y", strtotime(\$entity->publish_date));
+      \$monthNameEvent = date("F", strtotime(\$entity->publish_date));
+      \$dayEvent = date("j", strtotime(\$entity->publish_date)); ?>
+    <div class="col-md-4">
+      <?= \$blogItem->image; ?>
+      <?= \$blogItem->name; ?>
+      <?= \$dayEvent ?>
+      <?= \$monthNameEvent; ?>
+      <?= \$yearNameEvent; ?>
+      <?= substr( \$summary, 0, strpos(\$summary, ' ', 100) ); ?>
+      <?= \$blogItem->slug; ?>
+    </div>
+  <? } ?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>blogFront3</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.php, text.html</scope>
+</snippet>

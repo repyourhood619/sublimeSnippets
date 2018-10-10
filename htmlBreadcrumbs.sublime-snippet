@@ -1,0 +1,43 @@
+<snippet>
+	<content><![CDATA[
+<?	if(empty(\$entity->breadcrumb) == false) { ?>
+<?		if(key(\$entity->breadcrumb) === '/') { ?>
+<?			array_shift(\$entity->breadcrumb); ?>
+<?		} // endif ?>
+
+	<div class="breadcrumb">
+		<ul class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+			<li>
+				<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+					<a class="home" itemprop="url" href="/">
+						<span itemprop="name"><?= \$this->e(\$staticPages['/']->name); ?></span>
+						<meta itemprop="position" content="1" />
+					</a>
+				</span>
+			</li>
+<?			// TODO sort 'position' property ?>
+<?			foreach(\$entity->breadcrumb as \$_url => \$_entity) { ?>
+			<li>
+				<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+<?					if(empty(\$_url) || \$_url == \$app->requestPath()) { ?>
+						<span itemprop="name"><?= \$this->e(is_string(\$_entity) ? \$_entity : \$_entity->name); ?></span>
+						<meta itemprop="position" content="2" />
+<?					} else { ?>
+						<a class="home" itemprop="url" href="<?= \$this->e(\$_url); ?>">
+							<span itemprop="name"><?= \$this->e(is_string(\$_entity) ? \$_entity : \$_entity->name); ?></span>
+							<meta itemprop="position" content="1" />
+						</a>
+<?					} // endif ?>
+				</span>
+			</li>
+<?			} // endforeach ?>
+		</ul>
+	</div>
+</div>
+<?	} // endif ?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>htmlBreadcrumbs</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

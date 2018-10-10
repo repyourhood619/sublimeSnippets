@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+.container>.row>.col-md-3*4>p>lorem
+]]></content>
+	<tabTrigger>col3</tabTrigger>
+	<scope>text.php, text.html</scope>
+</snippet>

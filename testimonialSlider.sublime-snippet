@@ -1,0 +1,49 @@
+<snippet>
+	<content><![CDATA[
+		
+			
+	CDN: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+		
+	DOWNLOAD: https://owlcarousel2.github.io/OwlCarousel2/index.html
+	
+	<link rel="stylesheet" href="/stylesheets/owl.carousel.css">
+	<script src="/javascript/owl.carousel.js"></script>
+	
+	<script>
+		if (\$(".ts-testimonial-slide").length > 0) {
+	        \$(".ts-testimonial-slide").owlCarousel( {
+	            autoPlay: 4000,
+	            slideSpeed: 1000,
+	            navigation: false,
+	            pagination: true,
+	            rtl: false,
+	            singleItem: true
+	        });
+	    };
+	</script>
+	
+		<section id="testimonial" class="parallax-section">
+			<div class="overlay"></div>
+			<div class="testimonial_slider">
+				<div class="container">
+					<div class="ts-testimonial-slide">
+						<? \$testimonial = \$testimonials->find()->where('publish', 1)->limit(7);
+          				foreach(\$testimonial as \$test) { ?>
+						<div class="ts-testimonial-item">
+							<div class="slider_content">
+								<p>"<?= \$test->text; ?>"</p>
+								<p class="author">- <?= \$test->name; ?></p>
+							</div>
+						</div>
+						<? } ?>
+					</div>
+				</div>
+			</div>
+		</section>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>testimonialSlider</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

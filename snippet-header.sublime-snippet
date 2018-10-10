@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+(header>#header>.container>.row>.col-md-2>.logo-wrap(a:link[href="/"](img[src="/img/logo.png"][alt="logo"]))^.col-md-10>nav>.navbar>ul>li*5>{link})
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>snippet-header</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php, source.html</scope>
+</snippet>

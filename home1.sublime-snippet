@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+(#home>(.introSection>.container>.row>.col-md-6*2>p>lorem)+(.aboutSection>.container>.row>.col-md-6>h2>{About Us}^^.col-md-6>p>lorem)+(.aboutSection>.container>.row>.col-md-4*4)+(.contactSection.container>.row>.col-md-2*6))
+]]></content>
+	<tabTrigger>home1</tabTrigger>
+	<scope>text.php, text.html</scope>
+</snippet>

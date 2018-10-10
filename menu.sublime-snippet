@@ -1,0 +1,40 @@
+<snippet>
+	<content><![CDATA[
+<?	foreach(\$menu as \$_url => \$_entity) { ?>
+	<?		// See if the item is a parent
+		 \$childPages = \$pages->find()->where('parent', \$_entity->id);
+
+		 if(count(\$childPages)) { ?>
+			 <li class="caret-child">
+				 <a href="<?= \$this->e('/' . \$_entity->slug); ?>"><?= \$this->e(\$_entity->name); ?></a>
+				 <ul>
+	<?	foreach(\$childPages as \$childPage) { ?>
+	<?	//see if child page is a parent
+		 \$subChildPages = \$pages->find()->where('parent', \$childPage->id);
+
+		 if(count(\$subChildPages)) { ?>
+			 <li><a href="<?= \$this->e('/' . \$_entity->slug); ?>/<?= \$childPage->slug; ?>"><?= \$this->e(\$childPage->name); ?></a>
+				 <ul>
+					 <? foreach(\$subChildPages as \$subChildPage) { ?>
+					 <li><a href="<?= \$this->e('/' . \$_entity->slug); ?>/<?= \$childPage->slug; ?>/<?= \$subChildPage->slug; ?>"><?= \$this->e(\$subChildPage->name); ?></a></li>
+					 <?} ?>
+				 </ul>
+			 </li>
+		 <? } else { ?>
+
+			 <li><a href="/<?= \$childPage->slug; ?>"><?= \$this->e(\$childPage->name); ?></a></li>
+	<?			} //endif subchild
+			}
+					 // endforeach ?>
+				 </ul>
+			 </li>
+	<?	} else { ?>
+			 <li>
+				 <a href="<?= \$this->e('/' . \$_entity->slug); ?>"><?= \$this->e(\$_entity->name); ?></a>
+			 </li>
+	<?	} // endif child ?>
+ <?	} // endforeach ?>
+]]></content>
+	<tabTrigger>navMenu</tabTrigger>
+	<scope>text.php, text.html</scope>
+</snippet>
