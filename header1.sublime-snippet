@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-(header>#header>.container>.row>.col-md-2>.logo-wrap(a:link[href="/"](img.img-fluid[src="/img/logo.png"][alt="logo"]))^.col-md-10>ul#menu>li*5>a[href="#"]>{link})
+(header>#header>.container>.row>.col-md-2>.logo-wrap(a:link[href="/"](img.logo[src="/img/logo.png"][alt="logo"]))^.col-md-10>ul#menu>li*5>a[href="#"]>{link})
 ]]></content>
 	<tabTrigger>header1</tabTrigger>
 	<scope>text.php, text.html</scope>
