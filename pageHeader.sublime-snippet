@@ -1,0 +1,42 @@
+<snippet>
+	<content><![CDATA[
+	
+<div class="pageHeader">
+	<?	if(\$entity->image) { ?>
+	  <div class="internalHeaderContainer" style="background: url('<?= \$entity->image; ?>');height: 300px;background-size: cover;">
+	    <div class="headerOverlay">
+	      <div class="container">
+	        <div class="row">
+	          <div class="col-xs-12">
+	            <div class="text">
+	              <h1><?= \$entity->name; ?></h1>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+
+	<?	} else { ?>
+	  <div class="internalHeaderContainer" style="background: url('/img/pageHeader.jpg');height: 300px;background-size: cover;">
+	    <div class="headerOverlay">
+	      <div class="container">
+	        <div class="row">
+	          <div class="col-xs-12">
+	            <div class="text">
+	              <h1><?= \$entity->name; ?></h1>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	<?	} // endif ?>
+</div>
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>pageHeader</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

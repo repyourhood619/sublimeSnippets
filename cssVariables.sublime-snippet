@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+
+// COLORS
+\$lightBlue: #63c0f9;
+\$buttonBackground: #63c0f9;
+\$buttonBackgroundHover: #f1f1f1;
+\$linkColor: #63c0f9;
+
+
+// FONTS
+\$primaryFont: 'Nexa';
+\$secondaryFont: 'Nexa';
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cssVariables</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

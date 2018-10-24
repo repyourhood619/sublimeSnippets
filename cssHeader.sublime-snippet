@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+
+#header {
+	position: relative;
+	margin-bottom: -97px;
+	z-index: 9999;
+
+	.containerCustom {
+		padding-top: 35px;		
+	}
+}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cssHeader</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,115 @@
+<snippet>
+	<content><![CDATA[
+<div class="searchbar">						
+	<form method="post" action="/search">
+      	<input name="header_search" type="text" class="btn-extended" placeholder="search" />
+		<button class="btn mobile-search-btn" type="submit"><i class="fa fa-search"></i></button>
+	</form>
+    <div class="btn-search"><i class="fa fa-search"></i>
+	</div>
+</div>
+
+
+
+.searchbar{
+	z-index: 9999999;
+	vertical-align: middle;
+	display: inline-block;
+	right: 0px;
+	position: relative;
+	float: right;
+	margin-top: -13px;
+	margin-left: 50px;
+
+	form {
+		margin-bottom: 0px;
+	}
+
+ .mobile-search-btn {
+   display: none;
+
+   i {
+     color: white!important;
+   }
+ }
+
+ &.clicked{
+
+   .btn-search{
+     border-radius: 0 40px 40px 0;
+     margin-left: 0px;
+   }
+
+   .btn-extended{
+   right: 0px;
+   width: 230px;
+   padding: 13px 30px;
+   opacity: 1;
+   border-radius: 40px 40px 40px 40px;
+   background: whitesmoke;
+   z-index: 999999;
+   }
+ }
+
+ .btn-search{
+	background-color: #2d7cb5;
+	color: white;
+	margin-left: 0px;
+	margin-top: 0px;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: all 0.4s ease-in-out;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	z-index: 9999999;
+	position: relative;
+	margin-right: -2px;
+
+   i {
+     color: white;
+   }
+
+ }
+
+ .btn-extended{
+   position: absolute;
+   width: 0px;
+   right: 0px;
+   margin-left: 0px;   
+   margin-top:  0px;
+   border-radius: 40px;
+   padding: 0;
+   font-size: 16px;
+   border: none;
+   opacity: 0;
+   transition: all 0.4s ease-in-out;
+
+
+   &:focus{
+     outline-width: 0px;
+   }
+ }
+}
+
+
+<script>
+\$('.btn-search').click(function(){
+ \$('.searchbar').toggleClass('clicked');
+ \$('.stage').toggleClass('faded');
+
+
+ if(\$('.searchbar').hasClass('clicked')){
+   \$('.btn-extended').focus();
+ }
+
+});
+</script>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>searchBox</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

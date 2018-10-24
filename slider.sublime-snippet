@@ -1,0 +1,65 @@
+<snippet>
+	<content><![CDATA[
+<div class="carouselSlider">
+
+		<div id="carouselHome" class="carousel slide" data-ride="carousel">
+		  <ol class="carousel-indicators">
+		    <li data-target="#carouselHome" data-slide-to="0" class="active"></li>
+		    <li data-target="#carouselHome" data-slide-to="1"></li>
+		    <li data-target="#carouselHome" data-slide-to="2"></li>
+		  </ol>
+		  <div class="carousel-inner">
+		  	<img class="sliderOverlay" src="/img/overlay.png">
+
+		    <div class="carousel-item active">
+				<img class="d-block w-100" src="/img/slide1.jpg" alt="First slide">
+		    </div>
+		    <div class="carousel-item">
+		      <img class="d-block w-100" src="/img/slide2.jpg" alt="Second slide">
+		    </div>
+		    <div class="carousel-item">
+		      <img class="d-block w-100" src="/img/slide3.jpg" alt="Third slide">
+		    </div>
+		  </div>
+		</div>
+
+		<div id="slider_captions">
+		  	<div id="caption-1" class="sliderTextWrap">
+		  		<h2><span class="thin">FIND SPORT</span>
+				Sponsorship Opportunities</h2>
+				<p>Sponship.bid is an online auction platform for buying and selling corporate sponsorship and brand promotion opportunities in the sports, entertainment, events and media industries.</p>
+				<a class="primaryBtn">Sponsors</a> <a class="primaryBtnRed">Rights Holders</a>
+			</div>
+		  	<div id="caption-2" class="sliderTextWrap">
+		  		<h2><span class="thin">HELLO WORLD</span>
+				Sponsorship Opportunities</h2>
+				<p>Sponship.bid is an online auction platform for buying and selling corporate sponsorship and brand promotion opportunities in the sports, entertainment, events and media industries.</p>
+			</div>
+		  	<div id="caption-3" class="sliderTextWrap">
+		  		<h2><span class="thin">Test</span>
+				Sponsorship Opportunities</h2>
+				<p>Sponship.bid is an online auction platform for buying and selling corporate sponsorship and brand promotion opportunities in the sports, entertainment, events and media industries.</p>
+			</div>
+		</div>
+
+	</div>
+
+
+	<script>
+		\$("#carouselHome").on('slide.bs.carousel', function(evt) {
+
+		   var step = \$(evt.relatedTarget).index();
+
+		   \$('#slider_captions .sliderTextWrap:not(#caption-'+step+')').fadeOut('fast', function() {
+		   		\$('#caption-'+step).fadeIn();
+		   });
+
+		});
+	</script>
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>slider</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

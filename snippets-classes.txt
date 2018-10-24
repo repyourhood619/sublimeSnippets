@@ -9,6 +9,10 @@ footer1
 
 ////// Structure //////
 
+pageHeader
+
+slider
+
 templates
 
 navMenu
@@ -26,6 +30,9 @@ col6
 col7
 
 col8
+
+searchBox
+
 
 ////// content //////
 
@@ -50,6 +57,8 @@ blogFront3
 
 testimonialSlider
 
+
+
 ////////// css /////////
 
 stylesheets
@@ -57,3 +66,17 @@ stylesheets
 cssFadeIn
 
 cssBase
+
+cssFonts
+
+cssHeader
+
+cssSlider
+
+cssVariables
+
+
+/////////// Scripts /////////
+
+
+scripts

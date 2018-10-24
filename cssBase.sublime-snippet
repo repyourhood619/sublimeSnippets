@@ -1,5 +1,9 @@
 <snippet>
 	<content><![CDATA[
+
+body {
+	font-family: \$primaryFont;
+}
 		
 h1 {
 	
@@ -27,6 +31,55 @@ p {
 
 a {
 	
+}
+
+.containerCustom {
+	max-width: 1468px;
+	width: 76.5%;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+#menu {
+	float:right;
+
+	li {
+	    list-style: none;
+	    display: inline-block;
+	}
+}
+
+.primaryBtn {
+	background: \$buttonBackground;
+	padding: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	color: white;
+	font-family: \$primaryFont;
+	border-radius: 5px;
+	font-weight: 700;
+}
+
+.primaryBtnRed {
+	@extend .primaryBtn;
+	background: red;
+}
+
+.slicknav_menu {
+	display:none;
+}
+
+@media screen and (max-width: 771px) {
+
+	#menu {
+		display:none;
+	}
+
+	.slicknav_menu {
+		display:block;
+		position: relative;
+		z-index: 9;
+	}
 }
 
 ]]></content>

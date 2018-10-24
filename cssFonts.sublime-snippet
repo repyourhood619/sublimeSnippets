@@ -1,0 +1,41 @@
+<snippet>
+	<content><![CDATA[
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('/fonts/NEXA_REGULAR.OTF');
+    src: url('/fonts/NEXA_REGULAR.OTF?#iefix') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('/fonts/NEXA_LIGHT.OTF');
+    src: url('/fonts/NEXA_LIGHT.OTF?#iefix') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('/fonts/NEXA_BOLD.OTF');
+    src: url('/fonts/NEXA_BOLD.OTF?#iefix') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('/fonts/NEXA_BOLD_0.OTF');
+    src: url('/fonts/NEXA_BOLD_0.OTF?#iefix') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cssFonts</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
