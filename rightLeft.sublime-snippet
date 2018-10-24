@@ -1,0 +1,49 @@
+<snippet>
+	<content><![CDATA[
+		<div class="rightLeft">
+			<div class="row noMargin">
+				<div class="col-md-6 noPadding">
+					<img src="/img/slide2.jpg" alt="">
+				</div>
+				<div class="col-md-6 noPadding">
+					<div class="textBox">
+						<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nesciunt cupiditate ex at libero ea enim, tempore, praesentium cum, maxime dolore reprehenderit dignissimos aut, doloremque doloribus eum rerum ipsam quibusdam.</div>
+						<div>Inventore eveniet ipsa quibusdam consequuntur maxime enim praesentium numquam voluptatem, laborum eius tempore. Ipsam numquam ex magnam veniam natus, aut ut ea sapiente dicta, tempore. Natus molestias, inventore iure ut!</div>
+						<div>Blanditiis quos vel quia natus, aut magnam consequuntur facere fugiat rem autem voluptas beatae dolore, animi fugit accusantium qui sapiente hic amet fuga, cum maxime voluptatem! Cumque magnam dolorem ut.</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="row noMargin">				
+
+				<div class="col-md-6 noPadding">
+					<div class="textBox">
+						<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nesciunt cupiditate ex at libero ea enim, tempore, praesentium cum, maxime dolore reprehenderit dignissimos aut, doloremque doloribus eum rerum ipsam quibusdam.</div>
+						<div>Inventore eveniet ipsa quibusdam consequuntur maxime enim praesentium numquam voluptatem, laborum eius tempore. Ipsam numquam ex magnam veniam natus, aut ut ea sapiente dicta, tempore. Natus molestias, inventore iure ut!</div>
+						<div>Blanditiis quos vel quia natus, aut magnam consequuntur facere fugiat rem autem voluptas beatae dolore, animi fugit accusantium qui sapiente hic amet fuga, cum maxime voluptatem! Cumque magnam dolorem ut.</div>
+					</div>	
+				</div>			
+				<div class="col-md-6 noPadding">
+					<img src="/img/slide3.jpg" alt="">
+				</div>
+				</div>
+
+			</div>
+		</div>
+
+
+		.rightLeft {
+			img {
+				width: 100%;
+			}
+
+			.textBox {
+			    padding: 5%;
+			}
+		}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>rightLeft</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

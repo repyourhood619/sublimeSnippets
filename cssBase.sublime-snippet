@@ -49,6 +49,14 @@ a {
 	}
 }
 
+.noPadding {
+	padding: 0px;
+}
+
+.noMargin {
+	margin: 0px;
+}
+
 .primaryBtn {
 	background: \$buttonBackground;
 	padding: 20px;

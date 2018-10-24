@@ -45,6 +45,64 @@
 	</div>
 
 
+
+.carouselSlider {
+	position: relative;
+	
+	#carouselHome {
+
+		.sliderOverlay {
+		    position: absolute;
+		    z-index: 9;
+		}
+	}
+
+	#caption-2 {
+	    display: none;
+	}
+
+	#caption-3 {
+	    display: none;
+	}
+
+	#slider_captions {
+	    z-index: 9999;
+	    position: absolute;
+	    top: 40%;
+	    left: 12%;
+	    width: 75%;
+
+	    .sliderTextWrap {
+		    position: absolute;
+			top: 50%;
+			transform: translate(0, -50%);
+		    color: white;
+
+		    h2 {
+				font-size: 59px;
+				margin-top: 111px;
+
+		    	.thin {
+		    	    display: block;
+					margin-bottom: -10px;
+					font-size: 52px;
+					text-transform: uppercase;
+		    	}
+		    }
+
+		    p {
+		    	max-width: 700px;
+		    	margin-bottom: 70px;
+		    }
+
+		    .primaryBtn {
+		    	margin-right: 10px;
+		    }
+		}
+	}
+}
+
+
 	<script>
 		\$("#carouselHome").on('slide.bs.carousel', function(evt) {
 

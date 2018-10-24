@@ -6,7 +6,9 @@
 
 	<script>
 	\$(function(){
-		\$('#menu').slicknav();
+		\$('#menu').slicknav({
+			label: '',
+		});
 	});
 	</script>
 ]]></content>

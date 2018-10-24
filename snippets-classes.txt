@@ -13,6 +13,10 @@ pageHeader
 
 slider
 
+leftRight
+
+rightLeft
+
 templates
 
 navMenu
@@ -51,6 +55,8 @@ emailScript
 
 /////// loops //////
 
+navMenu
+
 blogFront4
 
 blogFront3
@@ -77,6 +83,5 @@ cssVariables
 
 
 /////////// Scripts /////////
-
 
 scripts
