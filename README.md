@@ -7,6 +7,7 @@ You will need to have the EMMET package installed in sublime for some of the sni
 
 INSTALL MOST UP TO DATE SNIPPETS 
 First Time:
+<br>
 1.cd /Users/YOURUSERNAME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 <br>
 2.git init
