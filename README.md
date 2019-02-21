@@ -12,12 +12,12 @@ You will need to have the EMMET package installed in sublime for some of the sni
 2. git init
 3. git clone https://github.com/repyourhood619/sublimeSnippets.git
 
-Second Time:
+#### Second Time:
 1. cd /Users/YOURUSERNAME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/sublimeSnippets
 <br>
 2.git pull
 
-HOW TO USE
+### HOW TO USE
 type a snippet name e.g. eName and hit the tab button and the code will be printed out.
 
-EXAMPLES (a full list of snippet classes can be found inside the sublimeSnippets folder)
+#### EXAMPLES (a full list of snippet classes can be found inside the sublimeSnippets folder)
