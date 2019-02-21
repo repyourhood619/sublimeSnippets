@@ -5,13 +5,11 @@ Install Snippets to print out html templates, loops and CSS in one word.
 
 You will need to have the EMMET package installed in sublime for some of the snippet classes to work. - https://emmet.io/download/
 
-INSTALL MOST UP TO DATE SNIPPETS 
-First Time:
-<br>
+### INSTALL MOST UP TO DATE SNIPPETS
+
+#### First Time
 1. cd /Users/YOURUSERNAME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-<br>
 2. git init
-<br>
 3. git clone https://github.com/repyourhood619/sublimeSnippets.git
 
 Second Time:
