@@ -8,7 +8,9 @@ You will need to have the EMMET package installed in sublime for some of the sni
 INSTALL MOST UP TO DATE SNIPPETS 
 First Time:
 1.cd /Users/YOURUSERNAME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+<br>
 2.git init
+<br>
 3.git clone https://github.com/repyourhood619/sublimeSnippets.git
 
 Second Time:
