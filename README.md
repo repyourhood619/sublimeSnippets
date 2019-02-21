@@ -15,7 +15,8 @@ First Time:
 3. git clone https://github.com/repyourhood619/sublimeSnippets.git
 
 Second Time:
-1.cd /Users/YOURUSERNAME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/sublimeSnippets
+1. cd /Users/YOURUSERNAME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/sublimeSnippets
+<br>
 2.git pull
 
 HOW TO USE
