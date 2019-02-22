@@ -1,5 +1,5 @@
-# sublimeSnippets
-Snippets for Bootstrap and other classes. Need to install Emmet to use all snippets.
+# Sublime Snippets
+Snippets for Bootstrap and other classes.
 
 Install Snippets to print out html templates, loops and CSS in one word.
 
