@@ -14,7 +14,7 @@ You will need to have the EMMET package installed in sublime for some of the sni
 
 #### Second Time:
 1. cd /Users/YOURUSERNAME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/sublimeSnippets
-2.git pull
+2. git pull
 
 ### HOW TO USE
 type a snippet name e.g. eName and hit the tab button and the code will be printed out.
